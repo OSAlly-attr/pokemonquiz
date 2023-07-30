@@ -164,4 +164,7 @@ button:hover, .button:hover {
     input{
         width: 60%;
     }
+    button{
+        text-align: center;
+    }
 }
