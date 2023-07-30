@@ -166,5 +166,6 @@ button:hover, .button:hover {
     }
     button{
         text-align: center;
+        width: 50%;
     }
 }
