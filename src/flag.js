@@ -21,6 +21,7 @@ const Flag = () =>{
     const [uncorrect_notion, setUncorrect_notion] = useState(false);
     const [count, addCount] = useState(0);
     const [hint_stat, setHint] = useState(false);
+    const [lang, setLang] = useState("EN");
     
 
     const changeFlag = () =>{
@@ -38,6 +39,14 @@ const Flag = () =>{
             setUncorrect_notion(true);
         }
     }
+    const handleChange = () =>{
+        if(lang==="EN"){
+            setLang("JP");
+        }else if(lang==="JP"){
+            setLang("EN");
+        }
+    }
+
     const showHint = () =>{
         setHint(true);
     }
@@ -60,12 +69,17 @@ const Flag = () =>{
             <div className='header'>
                 <img className='headericon' src={`${process.env.PUBLIC_URL}${pastpath}`} height="10px" width="10px" alt='icon'/>
                 <span className='title'>Quiz</span>
+                <div className="switchArea">
+                    <input type="checkbox" id="switch1" onChange={handleChange}/>
+                    <label for="switch1"><span></span></label>
+                    <div id="swImg"></div>
+                </div>
             </div>
             <div className='container'>
                 <div className='head'>
-                    {uncorrect_notion===false && ans_stat===false ? <h2 className='Qwhat question'>Q{count+1}. Where is this?</h2> : 
-                    uncorrect_notion===false && ans_stat===true ? <h2 className='Qwhat correct'>Q{count+1}. Correct! {f_list[ramnum[count]-1][2]}</h2> :
-                    <h2 className='Qwhat uncorrect'>Q{count+1}. Incorrect!</h2>}
+                    {uncorrect_notion===false && ans_stat===false ? <h2 className='Qwhat question'>Q{count+1}. {lang==="EN" ? "Where is this?" : "この国旗は？"}</h2> : 
+                    uncorrect_notion===false && ans_stat===true ? <h2 className='Qwhat correct'>Q{count+1}. {lang==="EN" ? "Correct! "+f_list[ramnum[count]-1][2]: "正解！ "+f_list[ramnum[count]-1][1]}</h2> :
+                    <h2 className='Qwhat uncorrect'>Q{count+1}. {lang==="EN" ? "Incorrect!" : "不正解!"}</h2>}
                 </div>
                 <div className='wrap-flag'>
                     <img className="flag" src={`${process.env.PUBLIC_URL}${path}`} width={400} alt={f_list[ramnum[count]-1][2]}/>
@@ -74,10 +88,10 @@ const Flag = () =>{
                     <input type="text" value={ip} placeholder='日本語 / English' onChange={(e)=>setIp(e.target.value)}/>
                 </div>
                 <div>
-                    {ans_stat===false ?<button onClick={checkAnswer}>Send</button> : <button onClick={changeFlag}>Next</button>}
+                    {ans_stat===false ?<button onClick={checkAnswer}>{lang==="EN" ? "Send" : "送信"}</button> : <button onClick={changeFlag}>{lang==="EN" ? "Next" : "次の問題へ"}</button>}
                 </div>
                 <div>
-                    {hint_stat===false ? <button className="hint_hidden" onClick={showHint}>Show Ans</button> : <button className="hint_showed" onClick={inputAns}>{f_list[ramnum[count]-1][2]}</button>}
+                    {hint_stat===false ? <button className="hint_hidden" onClick={showHint}>{lang==="EN" ? "Show Ans" : "こたえ"}</button> : <button className="hint_showed" onClick={inputAns}>{f_list[ramnum[count]-1][2]}</button>}
                 </div>
             </div>
         </div>
