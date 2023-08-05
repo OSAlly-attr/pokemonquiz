@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokemonquiz/static/css/main.87ac0847.css",
+    "main.js": "/pokemonquiz/static/js/main.6a9b023c.js",
+    "static/js/787.9a13ab69.chunk.js": "/pokemonquiz/static/js/787.9a13ab69.chunk.js",
+    "index.html": "/pokemonquiz/index.html",
+    "main.87ac0847.css.map": "/pokemonquiz/static/css/main.87ac0847.css.map",
+    "main.6a9b023c.js.map": "/pokemonquiz/static/js/main.6a9b023c.js.map",
+    "787.9a13ab69.chunk.js.map": "/pokemonquiz/static/js/787.9a13ab69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87ac0847.css",
+    "static/js/main.6a9b023c.js"
+  ]
+}
