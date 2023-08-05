@@ -10,25 +10,24 @@
     top : 18px;
     left : 26px;
     object-fit: cover;
-    /* border: 0.7px solid white; */
     filter:drop-shadow(5px 0 9px rgb(75, 123, 132));
 }
 .title{
     color : white;
     position : absolute;
-    font-size: 25px;
+    font-size: 24px;
     top : 20px;
     left : 80px;
 }
 
 .wrap-sil{
-    height : 300px;
-    margin : 20px 0;
+    height : 270px;
+    margin : 5px 0;
     text-align :center;
 }
 .sil {
     justify-content: center;
-    margin : 20px 0;
+    margin : 5px 0;
     filter:drop-shadow(8px 0 10px rgb(161, 161, 161));
     height: 100%;
     width: auto;
