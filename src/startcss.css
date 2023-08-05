@@ -1,0 +1,165 @@
+.header {
+    height: 60px;
+    background-color:#19197e;
+    font-family : 'RocknRoll One', sans-serif;
+}
+.headericon{
+    height : 40px;
+    width : 40px;
+    border-radius: 20px;
+    position: absolute;
+    top : 18px;
+    left : 26px;
+    object-fit: cover;
+    /* border: 0.7px solid white; */
+    filter:drop-shadow(5px 0 9px rgb(75, 123, 132));
+}
+.title{
+    color : white;
+    position : absolute;
+    font-size: 25px;
+    top : 20px;
+    left : 80px;
+}
+
+.wrap-sil{
+    height : 300px;
+    margin : 20px 0;
+    text-align :center;
+}
+.sil {
+    justify-content: center;
+    margin : 20px 0;
+    filter:drop-shadow(8px 0 10px rgb(161, 161, 161));
+    height: 100%;
+    width: auto;
+}
+.body {
+    /* padding-top:25px; */
+    background-color:#707070;
+    /* margin-left:10px;
+    margin-right:10px; */
+    height : 100vh;
+}
+.container {
+    max-width:600px;
+    margin:-8px auto;
+    text-align:center;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    background-color:#FAFAFA;
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+    
+}
+.head {
+    -webkit-border-radius:6px 6px 0px 0px;
+    -moz-border-radius:6px 6px 0px 0px;
+    border-radius:6px 6px 0px 0px;
+    /* background-color:#2ABCA7; */
+    color:#FAFAFA;
+    text-align:center;
+    padding: 0 0 0 0;
+}
+.Qwhat {
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+    padding:18px 0 18px 0;
+    font-size: 1.4em;
+    border-radius:6px 6px 0px 0px;
+    background-color:#2ABCA7;
+}
+.selectall{
+    font-size: 16px;
+    margin: 8px 8px 8px 8px;
+    padding: 4px 4px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff; 
+}
+.selectall.unpushed{
+    border: 1px solid #2ABCA7;
+    background-color: #2ABCA7; 
+}
+.selectall.unpushed:hover{
+    border: 1px solid #2ABCA7;
+    background:#19a08c; 
+}
+.selectall.pushed{
+    border: 1px solid #ababab;
+    background-color: #ababab; 
+}
+.selectall.pushed:hover{
+    border: 1px solid #ababab;
+    background:#969696; 
+}
+
+.region {
+    font-size: 16px;
+    margin: 8px 8px 8px 8px;
+    padding: 12px 45px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+.region.selected{
+    border: 1px solid #2ABCA7;
+    background-color: #2ABCA7; 
+}
+.region.selected:hover{
+    border: 1px solid #2ABCA7;
+    background:#19a08c;
+}
+.region.unselected{
+    border: 1px solid #ababab;
+    background-color: #ababab; 
+}
+.region.unselected:hover{
+    border: 1px solid #ababab;
+    background:#969696;
+}
+.send {
+    font-size: 16px;
+    margin-top:48px;
+    margin-bottom:15px;
+    background-color:#de4cab;
+    padding: 12px 20px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #de4cab;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+.send:hover{
+    background:#b3187d;
+}
+
+@media (max-width: 500px) {
+    .container{
+        margin: -10px auto;
+        width: 90%;
+    }
+    .region{
+        width: 40%
+    }
+    .send{
+        text-align: center;
+        width: 50%;
+    }
+}

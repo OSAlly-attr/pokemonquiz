@@ -1,0 +1,176 @@
+.header {
+    height: 60px;
+    background-color:#19197e;
+}
+.headericon{
+    height : 40px;
+    width : 40px;
+    border-radius: 20px;
+    position: absolute;
+    top : 18px;
+    left : 26px;
+    object-fit: cover;
+    /* border: 0.7px solid white; */
+    filter:drop-shadow(5px 0 9px rgb(75, 123, 132));
+}
+.title{
+    color : white;
+    position : absolute;
+    font-size: 25px;
+    top : 20px;
+    left : 80px;
+}
+
+.wrap-sil{
+    height : 300px;
+    margin : 20px 0;
+    text-align :center;
+}
+.sil {
+    justify-content: center;
+    margin : 20px 0;
+    filter:drop-shadow(8px 0 10px rgb(161, 161, 161));
+    height: 100%;
+    width: auto;
+}
+.body {
+    /* padding-top:25px; */
+    background-color:#707070;
+    /* margin-left:10px;
+    margin-right:10px; */
+    height : 100vh;
+    font-family : 'RocknRoll One', sans-serif;
+}
+.container {
+    max-width:600px;
+    margin:-8px auto;
+    text-align:center;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    background-color:#FAFAFA;
+}
+.head {
+    -webkit-border-radius:6px 6px 0px 0px;
+    -moz-border-radius:6px 6px 0px 0px;
+    border-radius:6px 6px 0px 0px;
+    /* background-color:#2ABCA7; */
+    color:#FAFAFA;
+}
+.head p{
+    margin: 0px 0 0 0;
+    font-size: 14px;
+}
+.Qwhat {
+    text-align:center;
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+    padding:18px 0 18px 0;
+    font-size: 1.4em;
+    border-radius:6px 6px 0px 0px;
+}
+.question{
+    background-color:#2ABCA7;
+}
+.uncorrect{
+    background-color:#de4cab;
+}
+.correct{
+    background-color:#fa8a39;
+}
+
+input {
+    margin-bottom:10px;
+}
+textarea {
+    height:100px;
+    margin-bottom:10px;
+}
+input:first-of-type
+{
+    margin-top:35px;
+}
+input {
+    font-size: 1em;
+    padding: 15px 10px 10px;
+    font-family: 'Source Sans Pro',arial,sans-serif;
+    border: 1px solid #cecece;
+    background: #d7d7d7;
+    color:#3a3a3a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 200px;
+}
+::-webkit-input-placeholder {
+    color: #FAFAFA;
+}
+:-moz-placeholder {
+    color: #FAFAFA;  
+}
+::-moz-placeholder {
+    color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+    color: #FAFAFA;  
+}
+button {
+    font-size: 16px;
+    margin-top:8px;
+    margin-bottom:15px;
+    background-color:#2ABCA7;
+    padding: 12px 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #2ABCA7;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width:30%;
+    color:#fff;
+}
+button:hover, .button:hover {
+    background:#19a08c;
+}
+.hint_hidden{
+    width : 200px;
+    margin-bottom:30px;
+}
+.hint_showed{
+    width : 200px;
+    margin-bottom:30px;
+    border: 1px solid #d8d8d8;
+    background-color:#d8d8d8;
+    color: white;
+}
+.hint_showed:hover{
+    background:#a6a7a7;
+}
+@media (max-width: 500px) {
+    .container{
+        margin: -10px auto;
+        width: 90%;
+    }
+    .wrap-flag{
+        height: 200px;
+    }
+    .flag{
+        height: 70%;
+        width: auto;
+    }
+    input{
+        width: 60%;
+    }
+    button{
+        text-align: center;
+        width: 50%;
+    }
+}
