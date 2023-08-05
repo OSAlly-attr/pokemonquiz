@@ -80,10 +80,7 @@
 input {
     margin-bottom:10px;
 }
-textarea {
-    height:100px;
-    margin-bottom:10px;
-}
+
 input:first-of-type
 {
     margin-top:35px;
@@ -119,6 +116,7 @@ input {
 :-ms-input-placeholder {  
     color: #FAFAFA;  
 }
+
 button {
     font-size: 16px;
     margin-top:8px;
@@ -138,6 +136,19 @@ button {
 }
 button:hover, .button:hover {
     background:#19a08c;
+}
+button.backhome{
+    margin: 0 0;
+    padding: 0 0;
+    width : 70px;
+    height: 60px;
+    border-radius: 0;
+    border: none; 
+    background-color: #19197e00;
+    transition: .5s;
+}
+.backhome:hover{
+    background-color:#3432b5; 
 }
 .hint_hidden{
     width : 200px;
